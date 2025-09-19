@@ -1,4 +1,5 @@
 import globals
+from vars import CREDIT
 import random
 from pyromod import listen
 from pyrogram import Client, filters
@@ -354,5 +355,7 @@ def register_settings_handlers(bot):
             await editable.edit(f"<b>❌ Failed to Change Settings:</b>\n<blockquote expandable>{str(e)}</blockquote>", reply_markup=keyboard)
         finally:
             await input_msg.delete()
+
+# .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
 
 # .....,.....,.......,...,.......,....., .....,.....,.......,...,.......,.....,
